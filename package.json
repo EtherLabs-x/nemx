@@ -1,0 +1,33 @@
+{
+  "name": "nemx",
+  "version": "1.0.0",
+  "main": "dist/cjs/nemx.js",
+  "module": "dist/esm/nemx.js",
+  "types": "dist/types/nemx.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/nemx.js",
+      "require": "./dist/cjs/nemx.js",
+      "types": "./dist/types/nemx.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm && npm run build:types",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:types": "tsc -p tsconfig.types.json"
+  },
+  "keywords": ["nemx", "discord", "discord.js", "bot", "utility"],
+  "author": {
+    "name": "Iscordian",
+    "email": "iscordian.dev@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "description": "A powerful module to interact with Discord API",
+  "dependencies": {
+    "discord.js": "^14.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

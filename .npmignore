@@ -1,0 +1,43 @@
+
+# Source files (only publish compiled output)
+src/
+tsconfig.json
+
+# Development dependencies
+node_modules/
+*.log
+
+# Test files
+test/
+tests/
+**/*.test.ts
+**/*.spec.ts
+
+# Build tools
+.nyc_output
+coverage/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Environment files
+.env*
+
+# Documentation (if you want to exclude)
+docs/
+*.md
+!README.md
+
+# Examples
+examples/
